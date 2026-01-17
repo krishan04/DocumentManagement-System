@@ -1,0 +1,10 @@
+<h2>Documents</h2>
+
+<div *ngFor="let d of docs">
+  <p>
+    <b>{{ d.title }}</b> |
+    Version: {{ d.version }} |
+    Owner: {{ d.owner }}
+    <button (click)="openDocument(d)">Open</button>
+  </p>
+</div>

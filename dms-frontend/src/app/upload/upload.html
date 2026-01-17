@@ -1,0 +1,15 @@
+<h2>Upload Document</h2>
+
+<input [(ngModel)]="title" placeholder="Title">
+<br><br>
+
+<input [(ngModel)]="tags" placeholder="Tags (comma separated)">
+<br><br>
+
+<input type="file" (change)="onFile($event)">
+<br><br>
+
+<button (click)="upload()">Upload</button>
+<br><br>
+
+<a routerLink="/documents">View Documents</a>
