@@ -42,18 +42,32 @@ The system allows users to register, log in, upload documents, manage versions, 
 
 Make sure the following are installed:
 
-- Node.js: v25.2.1  
+- Node.js: v25.2.1
+- 
   Check using:
+  
   bash : node -v
+  
 - Angular CLI
+- 
   npm install -g @angular/cli
+  
 -Backend Setup
+
  cd dms-backend
+ 
  npm install
+ 
  node index.js
+ 
  Backend will run on: http://localhost:5001
+ 
 -Frontend Setup
+
  cd dms-frontend
+ 
  npm install
+ 
  ng serve
+ 
  Frontend will run on: http://localhost:4200
