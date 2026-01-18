@@ -12,7 +12,7 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/documents", documentRoutes);
 // MongoDB connection
-mongoose.connect("mongodb+srv://dms_user:dms_user@cluster0.x9b8g1d.mongodb.net/?appName=Cluster0")
+mongoose.connect("mongodb+srv://<username>:<password>@cluster0.x9b8g1d.mongodb.net/?appName=Cluster0")
 .then(()=>console.log("MongoDB connected"))
 .catch(err=>console.log(err));
 
